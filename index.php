@@ -1,4 +1,4 @@
-<?php get_header(); ?>	
+<?php get_header(); ?>
 
 <?php query_posts( 'post_type=page&posts_per_page=100&orderby=menu_order&order=asc' ); ?>
 
@@ -14,14 +14,19 @@
 
 <nav>
 <ul class="nav">
-		<?php 
-		$nav = get_pages('sort_column=menu_order'); 
+		<?php
+		$nav = get_pages('sort_column=menu_order');
 		foreach ($nav as $navitem) {
-		$link = '<li id="nav-'.$navitem->post_name.'"><a href="#'. $navitem->post_name .'">'.$navitem->post_title.'</a></li>';					
+		$link = '<li id="nav-'.$navitem->post_name.'"><a href="#'. $navitem->post_name .'">'.$navitem->post_title.'</a></li>';
 		echo $link;
 		}
 		?>
 		<li><a href="http://thebiblecourse.bigcartel.com" title="Visit The Store" target="_blank">Order</a></li>
+		<li class="icon"><a href="https://twitter.com/thebiblecourse" title="Twitter" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter-logo.png" />
+</a></li>
+		<li class="icon"><a href="https://www.facebook.com/TheBibleCourse" title="Facebook" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook-logo.png" />
+</a></li>
+
 </ul>
 </nav>
 
@@ -33,7 +38,7 @@
 </div><!-- close section -->
 
 <?php $i++; endwhile; ?>
-	
+
 <?php get_footer(); ?>
 
 

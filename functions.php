@@ -1,26 +1,62 @@
-<?php 
+<?php
+add_action( 'after_setup_theme', 'bc_theme_setup' );
 
+function bc_theme_setup() {
+
+    // Theme Support
+
+        // Enable support for Post Thumbnails on posts.
+        add_theme_support( 'post-thumbnails', array( 'post' ) );
+
+        // Add default posts and comments RSS feed links to head.
+        add_theme_support( 'automatic-feed-links' );
+
+        // Switch default core markup for search form, comment form, and comments to output valid HTML5.
+        add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+
+
+    // Actions
+
+        // Load theme styles
+        add_action( 'wp_enqueue_scripts', 'bc_load_styles' );
+
+        // Load theme JavaScript files
+        add_action( 'wp_enqueue_scripts', 'bc_load_scripts' );
+
+
+
+}
 //////////////////////////////////////////////////////////////
 // Theme Header
 /////////////////////////////////////////////////////////////
-	
+function bc_load_scripts() {
 
-function bc_scripts() {
-	wp_enqueue_script('Modernizr', get_template_directory_uri().'/js/modernizr-2.6.2-respond-1.1.0.min.js', array('jquery'), null, false);
-	wp_enqueue_script('SmoothScroll', get_template_directory_uri().'/js/jquery.smooth-scroll.js', array('jquery'), null, true);
-	wp_enqueue_script('FancyBox', get_template_directory_uri().'/js/jquery.fancybox.js', array('jquery'), null, true);
-	wp_enqueue_script('FitVid', get_template_directory_uri().'/js/jquery.fitvids.js', array('jquery'), null, true);
-	wp_enqueue_script('Main', get_template_directory_uri().'/js/main.js', array('jquery'), null, true);
+    // Register scripts for use
+    wp_register_script( 'Modernizr', get_template_directory_uri() . '/js/modernizr-2.6.2-respond-1.1.0.min.js', array('jquery'), '2.1.1', true );
+    wp_register_script( 'SmoothScroll', get_template_directory_uri() . '/js/jquery.smooth-scroll.js', array('jquery'), null, true );
+    wp_register_script( 'FancyBox', get_template_directory_uri() . '/js/jquery.fancybox.js', array('jquery'), null, true );
+    wp_register_script( 'FitVid', get_template_directory_uri() . '/js/jquery.fitvids.js', array('jquery'), null, true );
+    wp_register_script( 'Main', get_template_directory_uri() . '/js/main.js', array('jquery'), null, true );
+
+    // Enqueue required Scripts
+    wp_enqueue_script( 'Modernizr' );
+    wp_enqueue_script( 'SmoothScroll' );
+    wp_enqueue_script( 'FancyBox' );
+    wp_enqueue_script( 'FitVid' );
+    wp_enqueue_script( 'Main' );
 
 
-	wp_register_style('Primary', get_template_directory_uri().'/style.css', array(), '1', 'all'); 
-	wp_enqueue_style('Primary');
-	wp_register_style('fancybox', get_template_directory_uri().'/css/fancybox.css', array(), '1', 'all'); 
-	wp_enqueue_style('fancybox');
-	
 }
 
-add_action('wp_enqueue_scripts', 'bc_scripts');
+function bc_load_styles() {
+
+  wp_register_style('Primary', get_template_directory_uri().'/style.css', array(), '1', 'all');
+	wp_enqueue_style('Primary');
+	wp_register_style('fancybox', get_template_directory_uri().'/css/fancybox.css', array(), '1', 'all');
+	wp_enqueue_style('fancybox');
+
+}
+
 
 //////////////////////////////////////////////////////////////
 // Button Shortcode
@@ -31,18 +67,18 @@ function bc_button($a) {
 		'label' 	=> 'Button Text',
 		'id' 	=> '1',
 		'url'	=> '',
-		'target' => '_parent',		
+		'target' => '_parent',
 		'color'	=> '',
 		'ptag'	=> false
 	), $a));
-	
-	$link = $url ? $url : get_permalink($id);	
-	
+
+	$link = $url ? $url : get_permalink($id);
+
 	if($ptag) :
 		return  wpautop('<a href="'.$link.'" target="'.$target.'" class="btn '.$color.'">'.$label.'</a>');
 	else :
 		return '<a href="'.$link.'" target="'.$target.'" class="btn '.$color.'">'.$label.'</a>';
-	endif;	
+	endif;
 }
 
 add_shortcode('button', 'bc_button');
@@ -82,7 +118,7 @@ function bc_two_thirds( $atts, $content = null ) {
 }
 add_shortcode('two_thirds', 'bc_two_thirds');
 
-function bc_two_thirds_last( $atts, $content = null ) {	
+function bc_two_thirds_last( $atts, $content = null ) {
    return '<div class="two_thirds last">' . do_shortcode($content) . '</div>';
 }
 add_shortcode('two_thirds_last', 'bc_two_thirds_last');

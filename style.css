@@ -1,6 +1,6 @@
-/*  
+/*
 Theme Name: The Bible Course
-Theme URI: 
+Theme URI:
 Description: A Single Page Wordpress Theme
 Version: 1.0
 Author: Richard Saunders
@@ -11,7 +11,7 @@ License URI:
 */
 
 
-/* 
+/*
 // Reset
 // ========================================================================== */
 
@@ -24,8 +24,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 margin: 0;
@@ -37,7 +37,7 @@ vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 display: block;
 }
@@ -88,7 +88,7 @@ resize: vertical
 
 /* ========================================================================== */
 
-/* 
+/*
 // Wordpress
 // ========================================================================== */
 
@@ -189,7 +189,7 @@ display: block; height: 1px; border: 0; border-top: 1px solid #dadada; margin: 1
 }
 
 .wrapper {
-width: 90%; 
+width: 90%;
 }
 
 .fluid-width-video-wrapper {
@@ -198,12 +198,12 @@ max-width: 700px;
 margin-bottom: 30px;
 }
 
-/* 
+/*
 // Typography
 // ========================================================================== */
 
 h1, h2, h3, h4, h5, h6, strong{
-font-weight: bold; 
+font-weight: bold;
 color: #2d2d2d;
 line-height: 20px;
 text-rendering: optimizelegibility;
@@ -227,7 +227,7 @@ text-decoration: none;
 -moz-transition: all 300ms ease-in-out;
 -ms-transition: all 300ms ease-in-out;
 -o-transition: all 300ms ease-in-out;
-transition: all 300ms ease-in-out;	
+transition: all 300ms ease-in-out;
 }
 
 a:hover{
@@ -264,17 +264,17 @@ line-height: 28px;
 }
 
 
-/* 
+/*
 // Forms
 // ========================================================================== */
 .btn{
 color: #fff;
 -webkit-border-radius: 3px;
 border-radius: 3px;
-font-size: 18px; 
-text-align: center; 
-padding: 14px 10%; 
-font-weight: bold; 
+font-size: 18px;
+text-align: center;
+padding: 14px 10%;
+font-weight: bold;
 display: inline-block;
 background-color: #f35000;
 }
@@ -302,30 +302,44 @@ margin-bottom: 30px;
 -moz-transition: all 300ms ease-in-out;
 -ms-transition: all 300ms ease-in-out;
 -o-transition: all 300ms ease-in-out;
-transition: all 300ms ease-in-out;	
+transition: all 300ms ease-in-out;
 }
 
 .field{
 width: 50%;
 min-width: 130px;
-}   
+}
 
-/* 
+/*
 // Navigation
 // ========================================================================== */
 nav{
 float: right;
-margin-top: 20px;	
+margin-top: 20px;
 }
 
-nav ul { 
-margin: 0; 
+nav ul {
+margin: 0;
 padding: 0;
 }
 
 nav ul li{
 margin-right: 40px;
 display: inline-block;
+}
+
+nav ul li:last-child {
+	margin-right: 0;
+}
+
+.icon {
+margin-right: 20px;
+opacity: 1;
+transition: opacity .25s ease-in-out;
+}
+
+.icon:hover {
+opacity: 0.5;
 }
 
 nav a {
@@ -338,7 +352,7 @@ nav a:hover{
 color: #2a93d8;
 }
 
-/* 
+/*
 // Logo
 // ========================================================================== */
 
@@ -358,11 +372,11 @@ display: block;
 height: 100px
 }
 
-/* 
+/*
 // Layout
 // ========================================================================== */
 .wrapper {
-width: 1100px; 
+width: 1100px;
 margin: 0 auto;
 }
 
@@ -384,15 +398,15 @@ clear: both;
 .one_quarter,
 .one_half,
 .one_third,
-.two_thirds{ 
-position: relative; 
-margin-right: 4%; 
+.two_thirds{
+position: relative;
+margin-right: 4%;
 float: left;
 }
 
 .last{ margin-right:0 !important; clear:right; }
 
-/* 
+/*
 // Homepage
 // ========================================================================== */
 .home {
@@ -405,7 +419,7 @@ margin-bottom: 15px;
 }
 
 .home h2{
-margin-bottom: 15px;	
+margin-bottom: 15px;
 }
 
 .home ul {
@@ -447,7 +461,7 @@ margin-top: 40px;
 
 
 
-/* 
+/*
 // About Section
 // ========================================================================== */
 .about {
@@ -472,12 +486,12 @@ font-weight: 300;
 }
 
 .about em strong {
-font-weight: 300; 
+font-weight: 300;
 color: #4d5356;
 font-size: 14px;
 }
 
-/* 
+/*
 // Testimonials
 // ========================================================================== */
 .testimonials {
@@ -493,12 +507,12 @@ background:  transparent url('./img/logo_light.png') no-repeat;
 
 .testimonials nav a:hover{color: #3db8f2;}
 
-.testimonials h1, 
-.testimonials h2, 
-.testimonials h3, 
-.testimonials h4, 
-.testimonials h5, 
-.testimonials h6, 
+.testimonials h1,
+.testimonials h2,
+.testimonials h3,
+.testimonials h4,
+.testimonials h5,
+.testimonials h6,
 .testimonials strong{color: #fff;}
 
 
@@ -555,7 +569,7 @@ font-style: italic;
 
 
 
-/* 
+/*
 // Contact Section
 // ========================================================================== */
 .contact .logo{
@@ -573,10 +587,10 @@ color: #cbcfd0;
 
 .contact h1,
 .contact h2,
-.contact h3, 
-.contact h4, 
-.contact h5, 
-.contact h6, 
+.contact h3,
+.contact h4,
+.contact h5,
+.contact h6,
 .contact strong {color: #fff;}
 
 .contact hr{
@@ -598,15 +612,14 @@ background: #2a93d8;
 background: #f35000;
 }
 
-/* 
+/*
 // Footer Section
 // ========================================================================== */
 
 .footer-container {
 color: #cbcfd0;
 background-color: #20252c;
-height: 50px;
-padding-top: 30px;
+padding: 30px 0;
 text-align: center;
 font-size: 14px;
 }
@@ -614,8 +627,21 @@ font-size: 14px;
 .footer-container a {color: #fff;}
 .footer-container a:hover {color: #3db8f2;}
 
+.supporter {
+display: block;
+width: 220px;
+height: 72px;
+margin: 0 auto;
+margin-bottom: 1.5em;
+opacity: 1;
+transition: opacity .25s ease-in-out;
+}
 
-/* 
+.supporter:hover {
+opacity: 0.5;
+}
+
+/*
 // Plugin - Ninja Forms
 // ========================================================================== */
 textarea,
@@ -631,7 +657,7 @@ width: 98%
 input[type=text] {padding: 14px 10px;}
 
 
-.field-wrap, 
+.field-wrap,
 #ninja_forms_required_items {
 	margin-bottom: 0!important;
 }
@@ -646,14 +672,14 @@ input[type=text] {padding: 14px 10px;}
 }
 
 
-.ninja-forms-form-wrap .ninja-forms-form .text-wrap.label-above input, 
-.ninja-forms-form-wrap .ninja-forms-form .text-wrap.label-below input, 
-.ninja-forms-form-wrap .ninja-forms-form .textarea-wrap.label-above textarea, 
+.ninja-forms-form-wrap .ninja-forms-form .text-wrap.label-above input,
+.ninja-forms-form-wrap .ninja-forms-form .text-wrap.label-below input,
+.ninja-forms-form-wrap .ninja-forms-form .textarea-wrap.label-above textarea,
 .ninja-forms-form-wrap .ninja-forms-form .textarea-wrap.label-below textarea {
-width: 98%!important;	
+width: 98%!important;
 }
 
-/* 
+/*
 // Plugin - Cleaner Gallery
 // ========================================================================== */
 
@@ -689,7 +715,7 @@ padding: 1%;
 margin: 0 auto;
 border: 1px solid #dadada;
 }
-	
+
 .gallery-caption {margin-left: 0;}
 
 /* Image sizes depending on the number of columns */
@@ -725,26 +751,26 @@ border: 1px solid #dadada;
 .gallery .col-29 { width: 3.44%; }
 .gallery .col-30 { width: 3.33%; }
 
-/* 
+/*
 // Media Queries
 // ========================================================================== */
 
-@media only screen and (max-width: 1140px) { 
+@media only screen and (max-width: 1140px) {
 
 	.wrapper {
-	width: 90%; 
+	width: 90%;
 	margin: 0 auto;}
-	
+
 	.logo {
 	float: none;
 	text-align: center;
 	margin: -20px auto 30px;}
-	
+
 	nav {
 	float: none;
 	padding-bottom: 15px;
 	border-bottom: 1px solid #dadada;}
-	
+
 	nav ul {text-align: center;}
 
 	nav ul li {
@@ -754,9 +780,9 @@ border: 1px solid #dadada;
 	padding: 0.25em 3em;
 	margin: 0;
 	border-right: 1px solid #dadada;}
-	
+
 	nav ul li:last-child {border: none;}
-	
+
 	.testimonials nav {border-bottom: 1px solid #4f575a;}
 
 }
@@ -765,9 +791,9 @@ border: 1px solid #dadada;
 
 	header.wrapper {
 	padding-top: 50px;
-	padding-bottom: 30px;	
+	padding-bottom: 30px;
 	}
-	
+
 	.gallery .col-2 { width: 100%; }
 	.gallery .gallery-item .gallery-icon img {width: 100%}
 
@@ -777,24 +803,24 @@ border: 1px solid #dadada;
 	text-align: center;
 	margin: 0 auto;
 	margin-bottom: 5%;}
-	
+
 	.two_thirds,
 	.fluid-width-video-wrapper {
 	float: none;
 	position: relative;
 	width: 100%;
-	margin: 0 auto;	
+	margin: 0 auto;
 	}
-	
+
 	.fluid-width-video-wrapper {
 	margin-bottom: 30px;
 	}
-	
+
 	.testimonials .one_third {
 	width: 100%;
 	text-align: left;
 	}
-	
+
 	.testimonials .last {
 	clear: both;
 	}
@@ -816,7 +842,7 @@ border: 1px solid #dadada;
 	padding-top: 20px;
 	margin-top: 40px;
 	border-top: 1px solid #dadada;}
-	
+
 	nav ul li {
 	padding: 0.25em 1.5em;
 	}
@@ -841,7 +867,7 @@ border: 1px solid #dadada;
 	border-right: 0;
 	padding: 0 1.5em 0 0;
 	}
-	
+
 	nav a {font-size: 16px;}
 
 	.pages li {
@@ -868,72 +894,72 @@ border: 1px solid #dadada;
 	width: 100%;
 	margin-bottom: 30px;
 	}
-	
+
 	.testimonials .quote cite,
 	.testimonials .quote cite .excerpt {
 	display: block;
 	}
-	
-	.ninja-forms-form-wrap .ninja-forms-form .text-wrap.label-above input, 
-	.ninja-forms-form-wrap .ninja-forms-form .text-wrap.label-below input, 
-	.ninja-forms-form-wrap .ninja-forms-form .textarea-wrap.label-above textarea, 
+
+	.ninja-forms-form-wrap .ninja-forms-form .text-wrap.label-above input,
+	.ninja-forms-form-wrap .ninja-forms-form .text-wrap.label-below input,
+	.ninja-forms-form-wrap .ninja-forms-form .textarea-wrap.label-above textarea,
 	.ninja-forms-form-wrap .ninja-forms-form .textarea-wrap.label-below textarea {
-	margin: 0 auto;	
+	margin: 0 auto;
 	width: 90%!important;
 	}
-	
+
 	input.btn{
 width: 90%;
 margin: 0 auto;
 	}
-	
+
 }
 
 
 
 
 
-/* 
+/*
 // Helper Classes
 // ========================================================================== */
 
 .ir {
-background-color: transparent; 
-border: 0; 
-overflow: hidden; 
+background-color: transparent;
+border: 0;
+overflow: hidden;
 *text-indent: -9999px;
 }
 
 .ir:before {
-content: ""; 
-display: block; 
-width: 0; 
+content: "";
+display: block;
+width: 0;
 height: 100%;
 }
 
 .hidden {
-display: none !important; 
+display: none !important;
 visibility: hidden;
 }
 
 .visuallyhidden {
-border: 0; 
-clip: rect(0 0 0 0); 
-height: 1px; 
-margin: -1px; 
-overflow: hidden; 
-padding: 0; 
-position: absolute; 
+border: 0;
+clip: rect(0 0 0 0);
+height: 1px;
+margin: -1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
 width: 1px;
 }
 
-.visuallyhidden.focusable:active, 
+.visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
 clip: auto;
-height: auto; 
-margin: 0; 
-overflow: visible; 
-position: static; 
+height: auto;
+margin: 0;
+overflow: visible;
+position: static;
 width: auto;
 }
 
@@ -941,7 +967,7 @@ width: auto;
 visibility: hidden;
 }
 
-.clearfix:before, 
+.clearfix:before,
 .clearfix:after {
 content: " "; display: table;
 }
@@ -955,7 +981,7 @@ Print styles
 ========================================================================== */
 
 @media print {
-	
+
 	* {
 	background: transparent !important;
 	color: #000 !important; /* Black prints faster: h5bp.com/s */
